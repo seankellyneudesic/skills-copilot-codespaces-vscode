@@ -8,11 +8,11 @@ name: Step 4, Add Copilot suggestion from comment
 on:
   workflow_dispatch:
   push:
-    branches:
-      - main
     paths:
       - "comments.js"
-
+    branches:
+      - main
+    
 # Reference: https://docs.github.com/en/actions/security-guides/automatic-token-authentication
 permissions:
   # Need `contents: read` to checkout the repository.
